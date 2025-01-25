@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SearchTextField
 
 public struct WSTagAcceptOption: OptionSet {
     public let rawValue: Int
