@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'WSTagsField/*.{h}', 'Source/**/*.{h,swift}'
   s.frameworks = 'UIKit'
-  s.frameworks = 'SearchTextField'
+  s.dependency = 'SearchTextField'
 end
