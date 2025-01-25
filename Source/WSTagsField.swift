@@ -635,6 +635,9 @@ extension WSTagsField {
         textField.spellCheckingType = .no
         textField.delegate = self
         textField.font = font
+        textField.itemSelectionHandler = { chosenTagName in
+                     self.acceptCurrentTextAsTag()
+                 }
         addSubview(textField)
 
         layerBoundsObserver = self.observe(\.layer.bounds, options: [.old, .new]) { [weak self] sender, change in
